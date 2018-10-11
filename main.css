@@ -1,0 +1,42 @@
+html{
+  height:100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: linear-gradient(to bottom, black, lightgrey);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+} 
+
+p{
+  color: lime; 
+  font-family: "Arial";
+  font-size: 30px;
+  margin: 10px 0 0 10px;
+  white-space: pre;
+  overflow: hidden;
+  width: 30em;
+  word-spacing: 5px;
+  letter-spacing: 4px;
+  animation: a 5s steps(60, end); 
+}
+p a{
+  color: white;
+}
+
+span{
+  animation: b 1s infinite;
+}
+
+@keyframes a{ 
+  from { width: 0; } 
+}  
+
+@keyframes b{
+  to{opacity: 0;}
+}
